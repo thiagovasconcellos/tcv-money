@@ -55,10 +55,10 @@ export function NewTransactionModal({ isOpen, onRequestClose } : NewTransactionM
         <img src={closeSvg} alt="close modal"></img>
       </button>
       <Container onSubmit={handleCreateNewTransaction}>
-        <h2>Cadastrar transação</h2>
+        <h2>New transaction</h2>
 
         <input
-          placeholder='Título'
+          placeholder='Title'
           value={title}
           onChange={event => setTitle(event.target.value)}
         />
@@ -66,7 +66,7 @@ export function NewTransactionModal({ isOpen, onRequestClose } : NewTransactionM
           type="number"
           value={amount}
           onChange={event => setAmount(Number(event.target.value))}
-          placeholder='Valor'
+          placeholder='Amount'
         />
 
         <TransactionTypeContainer>
@@ -77,7 +77,7 @@ export function NewTransactionModal({ isOpen, onRequestClose } : NewTransactionM
             activeColor="green"
           >
             <img src={incomeSvg} alt="income" />
-            <span>Entrada</span>
+            <span>Income</span>
           </RadioBox>
           <RadioBox
             type='button' 
@@ -86,18 +86,18 @@ export function NewTransactionModal({ isOpen, onRequestClose } : NewTransactionM
             activeColor="red"
           >
             <img src={outcomeSvg} alt="outcome" />
-            <span>Saída</span>
+            <span>Outcome</span>
           </RadioBox>
         </TransactionTypeContainer>
 
         <input
-          placeholder='Categoria'
+          placeholder='Category'
           value={category}
           onChange={event => setCategory(event.target.value)}
         />
 
         <button type='submit'>
-          Cadastrar
+          Add transaction
         </button>
       </Container>
     </Modal>

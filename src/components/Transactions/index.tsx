@@ -11,11 +11,11 @@ export function TransactionsTable() {
       <table>
         <thead>
           <tr>
-            <th>Título</th>
-            <th>Valor</th>
-            <th>Categoria</th>
-            <th>Data</th>
-            <th>Ações</th>
+            <th>Title</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Actions</th>
           </tr>
         </thead>
 
@@ -24,14 +24,14 @@ export function TransactionsTable() {
             <tr key={transaction.id}>
               <td>{transaction.title}</td>
               <td className={transaction.type}>
-                {new Intl.NumberFormat('pt-BR', {
+                {new Intl.NumberFormat('en-US', {
                   style: 'currency',
-                  currency: 'BRL'
+                  currency: 'USD'
                 }).format(transaction.amount)}
               </td>
               <td>{transaction.category}</td>
               <td>
-                {new Intl.DateTimeFormat('pt-BR').format(
+                {new Intl.DateTimeFormat('en-US').format(
                   new Date(transaction.createdAt)
                 )}
               </td>

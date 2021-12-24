@@ -28,25 +28,25 @@ export function Summary() {
     <Container>
       <div>
         <header>
-          <p>Entradas</p>
+          <p>Income</p>
           <img src={incomeSvg} alt="incoming"/>
         </header>
         <strong>
-          {new Intl.NumberFormat('pt-BR', {
+          {new Intl.NumberFormat('en-US', {
             style: 'currency',
-            currency: 'BRL'
+            currency: 'USD'
            }).format(summary.credits)}
         </strong>
       </div>
       <div>
         <header>
-          <p>Saídas</p>
+          <p>Outcome</p>
           <img src={outcomeSvg} alt="outcomes"/>
         </header>
         <strong>- 
-        {new Intl.NumberFormat('pt-BR', {
+        {new Intl.NumberFormat('en-US', {
             style: 'currency',
-            currency: 'BRL'
+            currency: 'USD'
            }).format(summary.withdraws)}
         </strong>
       </div>
@@ -56,9 +56,9 @@ export function Summary() {
           <img src={totalSvg} alt="total"/>
         </header>
         <strong>
-        {new Intl.NumberFormat('pt-BR', {
+        {new Intl.NumberFormat('en-US', {
             style: 'currency',
-            currency: 'BRL'
+            currency: 'USD'
            }).format(summary.total)}
         </strong>
       </div>
