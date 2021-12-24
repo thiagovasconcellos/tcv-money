@@ -5,6 +5,7 @@ Messing around with React, TypeScript and MirageJS.
 ## Getting Started
 
 Pretty straightforward project. Just install dependecies and you're good to go.
+Database and API-mock are handled by MirageJS.
 
 ### Installing
 
