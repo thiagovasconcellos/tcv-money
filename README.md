@@ -2,6 +2,8 @@
 
 Messing around with React, TypeScript and MirageJS.
 
+![image](https://i.ibb.co/jVWzXXW/tcv-money.png)
+
 ## Getting Started
 
 Pretty straightforward project. Just install dependecies and you're good to go.
